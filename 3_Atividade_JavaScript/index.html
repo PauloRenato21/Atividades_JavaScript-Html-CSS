@@ -57,5 +57,64 @@
 
         <br/>
         <br/>
+
+        <label> 4) Adição, Subtração, Multiplicação e Divisão </label>
+            <input type="text" name="n1" id="n1">
+            <input type="text" name="n2" id="n2">
+
+            <button id="mais">Adição</button>
+            <button id="subtracao">Subtração</button>
+            <button id="multi">Multiplicação</button>
+            <button id="divi">Divisão</button> =
+            <button id="result">Resultado</button>
+            
+            <script>
+                mais.addEventListener('click', adicao)
+                subtracao.addEventListener('click', sub)
+                multi.addEventListener('click', multipli)
+                divi.addEventListener('click', divisao)
+
+                function adicao (){
+                    let nr1 = Number((window.document.getElementById('n1')).value)
+                    let nr2 = Number((window.document.getElementById('n2')).value)
+
+                    let soma = nr1 + nr2
+
+                    result.innerText = `O resultado é ${soma}`
+                }
+
+                function sub (){
+                    let nr1 = Number((window.document.getElementById('n1')).value)
+                    let nr2 = Number((window.document.getElementById('n2')).value)
+
+                    let soma = nr1 - nr2
+
+                    result.innerText = `O resultado é ${soma}`
+                }
+
+                function multipli (){
+                    let nr1 = Number((window.document.getElementById('n1')).value)
+                    let nr2 = Number((window.document.getElementById('n2')).value)
+
+                    let soma = nr1 * nr2
+
+                    result.innerText = `O resultado é ${soma}`
+                }
+
+                function divisao (){
+                    let nr1 = Number((window.document.getElementById('n1')).value)
+                    let nr2 = Number((window.document.getElementById('n2')).value)
+
+                    let soma = nr1 / nr2
+
+                    result.innerText = `O resultado é ${soma}`
+                }
+
+            </script>
+
+        <br/>
+        <br/>
+
+        
     </body>
 </html>
