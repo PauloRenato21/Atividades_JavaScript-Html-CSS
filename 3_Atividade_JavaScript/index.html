@@ -39,5 +39,23 @@
         <br/>
         <br/>
 
+        <label> 3) Dobro do Valor </label>
+        <input type="text" name="numero" id="numero"> =
+        <button id="resultado">Resultado</button>
+       
+        <script>
+
+            resultado.addEventListener('click', dobro)
+
+            function dobro (){
+                let valor = Number((window.document.getElementById('numero')).value)
+                const soma = valor * 2;
+
+                resultado.innerHTML = soma
+            }
+        </script>
+
+        <br/>
+        <br/>
     </body>
 </html>
