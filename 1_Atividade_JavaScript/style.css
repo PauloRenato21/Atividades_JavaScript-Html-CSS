@@ -1,0 +1,26 @@
+@charset "utf-8";
+body{
+    text-align: center;
+    margin-top: 200px;
+}
+h1{
+    font-family: Georgia ;
+    font-size: 37px;
+    background-color: yellow;
+}
+p{
+    font-family: Calibri;
+}
+button{
+    cursor: pointer;
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+button#play{
+    background-color: #665cbe;
+    margin-right: 20px;
+}
+button#xbox{
+    background-color: #9bc848;
+}

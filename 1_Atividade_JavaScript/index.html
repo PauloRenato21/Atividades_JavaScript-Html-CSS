@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>Java Script - Html | Paulo</title>
+    </head>
+    <body>
+        <h1>Bom dia</h1>
+        <p>Está pagina contém JavaScript, Html, CSS.</p>
+        <p>Qual você compraria ?</p>
+        <button id="play">Playstation 5</button>
+        <button id="xbox">Xbox Series X e S</button>
+        <script>
+            var play = function()
+            {
+                alert("!! Parabéns você é RICO !!");
+            }
+            document.getElementById("play").onclick = play;
+            var xbox = function()
+            {
+                alert("!! Parabén você é QUASE RICO !!");
+            }
+            document.getElementById("xbox").onclick = xbox;
+        </script>
+    </body>
+</html>
