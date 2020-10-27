@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3 Atividade Html/JavaScript</title>
+    </head>
+    <body>
+        <h2>Atividades 1 - 7</h2>
+        <label>1) Conversor de palavras para Maiúsculas
+            <input type="text" name="maius" id="textMaius">
+        </label>
+
+        <script>
+            const maius = document.getElementById("textMaius")
+
+            maius.addEventListener('keyup', maiusculo)
+
+            function maiusculo(){
+                maius.value = maius.value.toUpperCase();
+            }
+        </script>
+
+        <br/>
+        <br/>
+
+        <label>2) Conversor de palavras para Minúsculas</label>
+    </body>
+</html>
