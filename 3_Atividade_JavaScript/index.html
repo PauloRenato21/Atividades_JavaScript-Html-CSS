@@ -8,7 +8,7 @@
     <body>
         <h2>Atividades 1 - 7</h2>
         <label> 1) Conversor de palavras para Maiúsculas <strong>(DESATIVE o Capslock para ver o efeito)</strong>  </label>
-        <input type="text" name="maius" id="textMaius">
+        <input type="text" name="maius" id="textMaius" placeholder="Escreva uma palavra*">
        
         <script>
             const maius = document.getElementById("textMaius")
@@ -24,7 +24,7 @@
         <br/>
 
         <label> 2) Conversor de palavras para Minúsculas <strong>(ATIVE o Capslock para ver o efeito)</strong> </label>
-        <input type="text" name="minus" id="textMinus">
+        <input type="text" name="minus" id="textMinus" placeholder="Escreva uma palavra*">
         
         <script>
             const minus = document.getElementById("textMinus")
@@ -40,7 +40,7 @@
         <br/>
 
         <label> 3) Dobro do Valor </label>
-        <input type="text" name="numero" id="numero"> =
+        <input type="text" name="numero" id="numero" placeholder="Digite um valor*"> =
         <button id="resultado">Resultado</button>
        
         <script>
@@ -59,8 +59,8 @@
         <br/>
 
         <label> 4) Adição, Subtração, Multiplicação e Divisão </label>
-            <input type="text" name="n1" id="n1">
-            <input type="text" name="n2" id="n2">
+            <input type="text" name="n1" id="n1" placeholder="Digite o 1 valor*">
+            <input type="text" name="n2" id="n2" placeholder="Digite o 2 valor*">
 
             <button id="mais">Adição</button>
             <button id="subtracao">Subtração</button>
@@ -127,6 +127,26 @@
                 let nome =  String((document.getElementById('textecno')).value);
                 
                 alert(`A tecnologia ${nome} foi adicionada com Sucesso`);    
+            }
+        </script>
+
+        <br/>
+        <br/>
+
+        <label> 6) Lista de Compras: </label>
+        <input type="text" id="txtcoisa" name="coisas" placeholder="Comprar*">
+        <button id="enviar">Adicionar</button>
+
+        <script>
+            var cli = document.getElementById('enviar')
+            cli.addEventListener('click', adicionar)
+
+            function adicionar(){
+                const item = document.getElementById('txtcoisa')
+            
+                const listItem = document.createElement("div")
+                listItem.innerHTML = item.value 
+                document.body.appendChild(listItem)
             }
         </script>
 
