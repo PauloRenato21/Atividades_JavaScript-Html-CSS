@@ -115,6 +115,22 @@
         <br/>
         <br/>
 
-        
+        <label> 5) Adicione uma Tecnologia no campo:</label>
+        <input type="text" name="tecno" id="textecno" placeholder="Adicione uma tecnologia*">
+        <button id="adicionar">Adicionar</button>
+
+        <script>
+            var acao = document.getElementById('adicionar')
+            acao.addEventListener('click', aparecer)
+
+            function aparecer (){
+                let nome =  String((document.getElementById('textecno')).value);
+                
+                alert(`A tecnologia ${nome} foi adicionada com Sucesso`);    
+            }
+        </script>
+
+        <br/>
+        <br/>
     </body>
 </html>
