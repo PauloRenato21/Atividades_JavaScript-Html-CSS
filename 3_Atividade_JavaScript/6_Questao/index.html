@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="../Css/Style.css"/>
+        <link rel="sortcut icon" href="../Imagem/javascript.png" type="image/png"/>
+        <title>6 atividade JavaScript | Paulo</title>
+    </head>
+    <body>
+        <h1>Atividade 6 </h1>
+
+        <div>
+            <p> Lista de Compras: </p>
+
+            <br/>
+
+            <input type="text" id="txtcoisa" name="coisas" placeholder="Comprar*">
+            <br/>
+            <br/>
+            <button id="enviar">Adicionar</button>
+        </div>
+        
+       
+        <script>
+            var cli = document.getElementById('enviar')
+            cli.addEventListener('click', adicionar)
+
+            function adicionar(){
+                const item = document.getElementById('txtcoisa')
+            
+                const listItem = document.createElement("p")
+                listItem.innerHTML = item.value 
+                document.body.appendChild(listItem)
+            }
+        </script>
+    </body>
+</html>

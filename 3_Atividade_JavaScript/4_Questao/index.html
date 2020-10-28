@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="../Css/Style.css"/>
+        <link rel="sortcut icon" href="../Imagem/javascript.png" type="image/png"/>
+        <title>4 atividade JavaScript | Paulo</title>
+    </head>
+    <body>
+        <h1>Atividade 4 </h1>
+
+        <div>
+            <p> Adição, Subtração, Multiplicação e Divisão </p>
+
+            <br/>
+
+            <input type="text" name="n1" id="n1" placeholder="Digite o 1 valor*">
+            <input type="text" name="n2" id="n2" placeholder="Digite o 2 valor*">
+
+            <br/>
+            <br/>
+
+            <button id="mais">Adição</button>
+            <button id="subtracao">Subtração</button>
+            <button id="multi">Multiplicação</button>
+            <button id="divi">Divisão</button> =
+            <button id="result">Resultado</button>
+        </div>
+        
+       
+        <script>
+            mais.addEventListener('click', adicao)
+            subtracao.addEventListener('click', sub)
+            multi.addEventListener('click', multipli)
+            divi.addEventListener('click', divisao)
+
+            function adicao (){
+                let nr1 = Number((window.document.getElementById('n1')).value)
+                let nr2 = Number((window.document.getElementById('n2')).value)
+
+                let soma = nr1 + nr2
+
+                result.innerText = `O resultado é ${soma}`
+            }
+
+            function sub (){
+                let nr1 = Number((window.document.getElementById('n1')).value)
+                let nr2 = Number((window.document.getElementById('n2')).value)
+
+                let soma = nr1 - nr2
+
+                result.innerText = `O resultado é ${soma}`
+            }
+
+            function multipli (){
+                let nr1 = Number((window.document.getElementById('n1')).value)
+                let nr2 = Number((window.document.getElementById('n2')).value)
+
+                let soma = nr1 * nr2
+
+                result.innerText = `O resultado é ${soma}`
+            }
+
+            function divisao (){
+                let nr1 = Number((window.document.getElementById('n1')).value)
+                let nr2 = Number((window.document.getElementById('n2')).value)
+
+                let soma = nr1 / nr2
+
+                result.innerText = `O resultado é ${soma}`
+            }
+
+        </script>
+
+    </body>
+</html>

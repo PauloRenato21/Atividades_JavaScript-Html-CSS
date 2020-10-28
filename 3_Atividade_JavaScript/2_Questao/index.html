@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="../Css/Style.css"/>
+        <link rel="sortcut icon" href="../Imagem/javascript.png" type="image/png"/>
+        <title>2 atividade JavaScript | Paulo</title>
+    </head>
+    <body>
+        <h1>Atividade 2 </h1>
+
+        <div>
+            <p> Conversor de palavras para Minúsculas <strong>(ATIVE o Capslock para ver o efeito)</strong> </p>
+
+            <br/>
+
+            <input type="text" name="minus" id="textMinus" placeholder="Escreva uma palavra*">
+        </div>
+        
+       
+        <script>
+            const minus = document.getElementById("textMinus")
+
+            minus.addEventListener('keyup', minusculo)
+
+            function minusculo (){
+                minus.value = minus.value.toLowerCase();
+            }
+        </script>
+    </body>
+</html>

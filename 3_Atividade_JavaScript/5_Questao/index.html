@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="../Css/Style.css"/>
+        <link rel="sortcut icon" href="../Imagem/javascript.png" type="image/png"/>
+        <title>5 atividade JavaScript | Paulo</title>
+    </head>
+    <body>
+        <h1>Atividade 5 </h1>
+
+        <div>
+            <p> Adicione uma Tecnologia no campo:</p>
+
+            <br/>
+
+            <input type="text" name="tecno" id="textecno" placeholder="Adicione uma tecnologia*">
+            <br/>
+            <br/>
+            <button id="adicionar">Adicionar</button>
+        </div>
+        
+       
+       <script>
+            var acao = document.getElementById('adicionar')
+            acao.addEventListener('click', aparecer)
+
+            function aparecer (){
+                let nome =  String((document.getElementById('textecno')).value);
+                
+                alert(`A tecnologia ${nome} foi adicionada com Sucesso`);    
+            }
+        </script>
+    </body>
+</html>
