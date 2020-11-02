@@ -1,7 +1,3 @@
-const ax2 = 1;
-const bx = -10;
-const c = 24;
-
 function baskara (ax2, bx, c){
     delta = (bx ** 2) - 4 * ax2 * c 
 
@@ -19,4 +15,4 @@ function baskara (ax2, bx, c){
     }
 }
 
-console.log(baskara (ax2, bx, c))
+console.log(baskara (1, -10, 24))
