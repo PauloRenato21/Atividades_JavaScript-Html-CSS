@@ -1,5 +1,3 @@
-var valor1 = 40;
-var valor2 = 20;
 
 function soma(valor1,valor2){
     valor = valor1 + valor2;
@@ -20,10 +18,10 @@ function divi(valor1, valor2){
     return valor
 }
 
-console.log(soma (valor1, valor2))
+console.log(soma (10,10))
 console.log("-----------------------")
-console.log(subtrair(valor1, valor2))
+console.log(subtrair(12,23))
 console.log("-----------------------")
-console.log(multi(valor1, valor2))
+console.log(multi(34,5))
 console.log("-----------------------")
-console.log(divi(valor1, valor2))
+console.log(divi(100,3))
