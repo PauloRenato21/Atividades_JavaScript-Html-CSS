@@ -1,7 +1,3 @@
-const lado1 = 1;
-const lado2 = 1;
-const lado3 = 1;
-
 function classe(lado1,lado2,lado3){
     
     if (lado1 == lado2 && lado1 == lado3 && lado3 == lado2){
@@ -19,4 +15,4 @@ function classe(lado1,lado2,lado3){
     } 
 }
 
-console.log(classe (lado1,lado2,lado3))
+console.log(classe (1,2,3))
